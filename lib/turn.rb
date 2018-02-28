@@ -36,4 +36,5 @@ def turn(board)
   else
     turn(board) ##return?
   end
+  display_board(board)
 end
