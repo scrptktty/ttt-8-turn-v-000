@@ -24,13 +24,12 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-
   user_input = gets.strip
-  input_to_index
+  index = input_to_index(user_input)
   
-  if input_to_index == true
+  if input_to_index(user_input) == true
     return board
   else
-    return false
+    return false ##turn(board)
   end
 end
