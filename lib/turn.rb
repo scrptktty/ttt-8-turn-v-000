@@ -24,7 +24,7 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  if input_to_index(user_input) == true
+  if input_to_index == true
     return board
   else
     return ##turn(board)
