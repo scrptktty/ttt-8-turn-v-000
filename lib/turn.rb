@@ -28,6 +28,6 @@ def turn(board)
   if input_to_index(user_input) == true
     return board
   else
-    turn(board)
+    # turn(board)
   end
 end
