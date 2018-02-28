@@ -1,5 +1,6 @@
 require "pry"
 
+
 def display_board(board)
 puts " #{board[0]} | #{board[1]} | #{board[2]} "
 puts "-----------"
@@ -9,6 +10,7 @@ puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
 def valid_move?(board, index)
+  binding.pry
   if index.between?(0,8) == true && board[index] == " " || board[index] == "" || board[index] = nil
     return board[index]
   else
@@ -25,6 +27,7 @@ def move(board, index, character="X")
 end
 
 def turn(board)
+  binding.pry
   puts "Please enter 1-9:"
   user_input = gets.strip
   index = input_to_index(user_input)
